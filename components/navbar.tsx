@@ -9,11 +9,11 @@ export function Navbar() {
 	const { width } = useWindowSize()
 	const isMobile = width <= 375
 	return (
-		<header>
+		<header className=''>
 			<nav className='p-4 flex justify-between items-center'>
 				<div className='flex gap-4'>
 					<Link href='/'>
-						<Logo />
+						<Logo image />
 					</Link>
 					{!isMobile && (
 						<>
