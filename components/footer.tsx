@@ -10,7 +10,7 @@ export function Footer() {
 	return (
 		<Container
 			as='footer'
-			className='relative w-[100vw] text-white bg-super-dark-violet py-4 after:absolute after:inset-0 after:bg-super-dark-violet after:-left-1/2 after:-translate-x-1/2 after:-z-10'
+			className='relative w-[100vw] text-white bg-super-dark-violet py-4 after:absolute after:inset-0 after:bg-super-dark-violet after:-left-1/2 after:-translate-x-1/2 after:-z-10 before:absolute before:bg-super-dark-violet before:inset-0 before:-right-[150px] before:-z-10'
 		>
 			<div className='md:w-full md:flex md:justify-between lg:py-10'>
 				<Logo className='text-white md:w-fit lg:px-10' />

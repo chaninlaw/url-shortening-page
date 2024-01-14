@@ -52,7 +52,7 @@ export function ShortenSection() {
 
 	return (
 		<Container as='section' className='relative'>
-			<div className='w-full after:bg-accent-foreground after:w-[100vw]  after:h-[70%] after:absolute after:inset-0 after:-z-10 after:translate-y-1/2 md:after:-translate-x-[5%] lg:after:left-[1.5%] xl:after:left-[3%]'>
+			<div className='w-full after:bg-accent-foreground after:w-[100vw] after:h-[70%] after:absolute after:inset-0 after:-z-10 after:translate-y-1/2 md:after:-translate-x-[5%] lg:after:left-[1.5%] xl:after:-left-[4%] before:absolute before:w-[100vw] before:h-[70%] before:inset-0 before:-right-[150px] before:-z-10 before:bg-accent-foreground before:translate-y-1/2'>
 				<CardSection className='bg-dark-violet bg-[url("/images/bg-boost-mobile.svg")] rounded-xl lg:p-6 lg:bg-[url("/images/bg-boost-desktop.svg")]'>
 					<Form {...form}>
 						<form
