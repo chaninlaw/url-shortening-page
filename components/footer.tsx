@@ -10,10 +10,10 @@ export function Footer() {
 	return (
 		<Container
 			as='footer'
-			className='text-white bg-super-dark-violet py-4 w-[100vw] md:-translate-x-[5.22%] md:py-10 lg:px-20'
+			className='relative w-[100vw] text-white bg-super-dark-violet py-4 after:absolute after:inset-0 after:bg-super-dark-violet after:-left-1/2 after:-translate-x-1/2 after:-z-10'
 		>
-			<div className='md:w-full md:flex md:justify-between'>
-				<Logo className='text-white md:w-fit' />
+			<div className='md:w-full md:flex md:justify-between lg:py-10'>
+				<Logo className='text-white md:w-fit lg:px-10' />
 				<div className='md:flex md:justify-start md:space-x-10 lg:pl-24'>
 					<For each={footer.links}>
 						{(heading) => (
@@ -28,7 +28,7 @@ export function Footer() {
 						)}
 					</For>
 				</div>
-				<ul className='flex gap-4 mt-4 md:mt-0'>
+				<ul className='flex gap-4 mt-4 md:mt-0 lg:mr-24'>
 					<For each={socialIcons}>
 						{(icon) => (
 							<li key={icon.alt}>

@@ -23,9 +23,9 @@ export function CardSection(props: CardSectionProps) {
 			<Card
 				className={cn(
 					props.icon && 'shadow-none rounded-sm  md:mb-4 lg:h-[256px]',
-					props.index === 0 && '-translate-y-10',
+					props.index === 0 && 'lg:-translate-y-10',
 					props.index === 1 && '',
-					props.index === 2 && 'translate-y-20'
+					props.index === 2 && 'lg:translate-y-20'
 				)}
 			>
 				{props.icon && (
