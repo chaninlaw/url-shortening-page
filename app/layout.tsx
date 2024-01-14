@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { cn } from '@/lib/utils'
+import { Toaster } from '@/components/ui/toaster'
 
 const poppins = Poppins({ weight: ['500', '700'], subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 			<body className={cn('text-lg', poppins.className)}>
 				<Navbar />
 				{children}
+				<Toaster />
 			</body>
 		</html>
 	)
